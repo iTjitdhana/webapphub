@@ -13,7 +13,7 @@ COPY pnpm-lock.yaml ./
 
 # ติดตั้ง pnpm (ถ้าใช้) หรือ npm
 RUN npm install -g pnpm
-RUN pnpm install --frozen-lockfile
+RUN pnpm install --no-frozen-lockfile
 
 # Copy source code
 COPY . .
